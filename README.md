@@ -101,13 +101,8 @@ Notes
 
 * Backend must support search, sorting, and pagination
 * ESLint warnings can fail CI builds if not fixed
-
 ---
 
 Author
 
-Rohan Gupta
-
----
-
-If you want this converted to a file or customized further, tell me 👍
+Rohan Gupta\
