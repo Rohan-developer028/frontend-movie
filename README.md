@@ -1,70 +1,113 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie App – Local Setup Guide
 
-## Available Scripts
+This is a React-based movie browsing application with search, sorting, pagination, and a responsive UI built using Material UI.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Make sure the following are installed on your system:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Node.js (version 16 or higher)
+* npm or yarn
+* Backend API running locally or deployed
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+How to Run the Project Locally
 
-### `npm run build`
+Step 1: Clone the repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone git@github.com:Rohan-developer028/frontend-movie.git
+cd frontend-movie
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Step 2: Install dependencies
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+OR
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+yarn install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Step 3: Setup environment variables
 
-## Learn More
+Create a file named .env in the root directory and add:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+REACT_APP_API_URL=[http://localhost:5000](http://localhost:5000)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Note: Replace the URL with your backend API URL if it is different.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Step 4: Start the development server
 
-### Analyzing the Bundle Size
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+OR
 
-### Making a Progressive Web App
+yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application will start at:
 
-### Advanced Configuration
+[http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To create a production build:
 
-### `npm run build` fails to minify
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+Netlify / CI Warning Fix (Optional)
+
+If Netlify fails the build due to warnings being treated as errors, add the following environment variable in Netlify:
+
+CI=false
+
+(Use this only if necessary)
+
+---
+
+Tech Stack
+
+* React
+* Material UI (MUI)
+* JavaScript
+* REST API
+* Netlify (Deployment)
+
+---
+
+Features
+
+* Search movies
+* Sort by name, rating, release date, duration
+* Pagination support
+* Responsive grid layout
+* Fallback image handling
+* Clean UI using Material UI
+
+---
+
+Notes
+
+* Backend must support search, sorting, and pagination
+* ESLint warnings can fail CI builds if not fixed
+
+---
+
+Author
+
+Rohan Gupta
+
+---
+
+If you want this converted to a file or customized further, tell me 👍
